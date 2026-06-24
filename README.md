@@ -1,33 +1,75 @@
-# Philippine Employment and Unemployment Analytics Data
+# Impact of Natural Disasters on Regional Unemployment in the Philippines
 
 ## Overview
 
-The Philippine Employment and Unemployment Analytics Data Pipeline is a data engineering project that automates the collection, processing, storage, and analysis of labor force statistics from the Philippines. The project uses publicly available datasets from the Philippine Statistics Authority (PSA) to provide insights into employment, unemployment, and underemployment trends across different regions and time periods.
+This project investigates the relationship between natural disasters and unemployment rates in the Philippines. Using official labor force statistics from the Philippine Statistics Authority (PSA) and historical disaster event records from the EM-DAT Philippines dataset and analyze data for regional trend analysis.
+
+The project aims to answer the following research question:
+
+**Do natural disasters contribute to higher unemployment rates in affected Philippine regions?**
 
 ---
 
-## Objectives
+## Data Sources
 
-- Collect labor force data from publicly available sources.
-- Clean and standardize employment-related datasets.
-- Store historical data in a centralized database.
-- Analyze labor force trends over time.
-- Compare employment statistics across Philippine regions.
-- Create dashboards and reports for data visualization.
+### 1. Philippine Statistics Authority (PSA) - Labor Force Survey
+
+Official labor force statistics containing employment, unemployment, and underemployment rates.
+
+**Dataset Source:**
+
+* https://psa.gov.ph/statistics/labor-force-survey
+* https://openstat.psa.gov.ph
+
+**Key Fields:**
+
+* Region
+* Year
+* Month
+* Employment Rate
+* Unemployment Rate
+* Underemployment Rate
+* Labor Force Participation Rate
 
 ---
 
-## Data Source
+### 2. EM-DAT Philippines Geocoded Disaster Dataset
 
-This project uses datasets from the Philippine Statistics Authority (PSA), including:
+Historical disaster event records containing disaster locations, affected populations, deaths, and economic damages.
 
-- Employment Rate
-- Unemployment Rate
-- Underemployment Rate
-- Labor Force Participation Rate
-- Regional Labor Force Statistics
+**Dataset Source:**
 
-Data Sources:
+* https://www.aiddata.org/data/em-dat-phl
 
-- https://psa.gov.ph
-- https://openstat.psa.gov.ph
+**Available Files:**
+
+* disasters.csv
+* locations.csv
+* disasters_locations_merged.csv
+* data_dictionary.csv
+
+**Key Fields:**
+
+* disaster_id
+* disaster_type
+* year
+* month
+* province
+* municipality
+* deaths
+* affected
+* damages
+
+---
+
+## Project Objectives
+
+* Extract labor force statistics from PSA datasets.
+* Extract disaster event records from EM-DAT.
+* Standardize geographic information across datasets.
+* Aggregate disaster statistics by region and year.
+* Store processed data in a centralized data warehouse.
+* Analyze correlations between disasters and unemployment rates.
+* Build interactive dashboards and reports.
+
+---

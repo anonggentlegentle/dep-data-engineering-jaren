@@ -4,8 +4,6 @@
 
 The Philippine Employment and Unemployment Analytics Data Pipeline is a data engineering project that automates the collection, processing, storage, and analysis of labor force statistics from the Philippines. The project uses publicly available datasets from the Philippine Statistics Authority (PSA) to provide insights into employment, unemployment, and underemployment trends across different regions and time periods.
 
-The goal is to demonstrate key data engineering concepts such as ETL (Extract, Transform, Load), data warehousing, workflow automation, and business intelligence reporting.
-
 ---
 
 ## Objectives

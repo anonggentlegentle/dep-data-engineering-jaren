@@ -1,4 +1,4 @@
-# Philippine Employment and Unemployment Analytics Data Pipeline
+# Philippine Employment and Unemployment Analytics Data
 
 ## Overview
 
